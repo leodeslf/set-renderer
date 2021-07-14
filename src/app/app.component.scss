@@ -1,0 +1,40 @@
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  display: flex;
+  h1 {
+    font-weight: 100;
+    font-size: 17px;
+  }
+  span {
+    color: rgb(0, 255, 204);
+    text-transform: capitalize;
+  }
+}
+
+canvas {
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+#panel {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    display: flex;
+    & > * {
+      margin-left: auto;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.disabled {
+  color: gray;
+}
